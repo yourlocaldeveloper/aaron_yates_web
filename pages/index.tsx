@@ -1,7 +1,9 @@
 import React from 'react';
 
-const Main: React.FC = ({}) => {
-  return <div></div>;
+import { Main } from '@/components/organisms/Main/Main';
+
+const LandingPage: React.FC = ({}) => {
+  return <Main />;
 };
 
-export default Main;
+export default LandingPage;
