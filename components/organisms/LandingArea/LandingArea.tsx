@@ -10,14 +10,6 @@ export const LandingArea: React.FC = ({}) => {
   return (
     <div className={styles.landingArea}>
       <div className={styles.leftSection}>
-        <Image
-          className={styles.airBalloon}
-          src={airBalloon}
-          alt={'cute air balloon'}
-          width={250}
-        />
-      </div>
-      <div className={styles.rightSection}>
         <Title heading={'h3'}>hello... my name is Aaron</Title>
         <Title heading={'h1'} isBold>
           Frontend Web Developer
@@ -26,6 +18,14 @@ export const LandingArea: React.FC = ({}) => {
           I like to build scalable modern website, using the latest
           technologies.
         </Title>
+      </div>
+      <div className={styles.rightSection}>
+        <Image
+          className={styles.airBalloon}
+          src={airBalloon}
+          alt={'cute air balloon'}
+          width={250}
+        />
       </div>
     </div>
   );

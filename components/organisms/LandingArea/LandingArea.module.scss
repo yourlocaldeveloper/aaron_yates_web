@@ -20,18 +20,6 @@
 }
 
 .leftSection {
-  display: none;
-
-  @include for-tablet-up {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 40%;
-    height: 100%;
-  }
-}
-
-.rightSection {
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -45,6 +33,19 @@
     padding: 25px;
     text-align: left;
     align-items: inherit;
+    padding-left: 100px;
+  }
+}
+
+.rightSection {
+  display: none;
+
+  @include for-tablet-up {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    height: 100%;
   }
 }
 
