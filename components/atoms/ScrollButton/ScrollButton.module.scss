@@ -1,0 +1,12 @@
+.scrollButton {
+  margin: 5px 0;
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  border: 3px solid white;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.active {
+  background-color: red;
+}
