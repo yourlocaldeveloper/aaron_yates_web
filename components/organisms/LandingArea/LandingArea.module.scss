@@ -1,4 +1,39 @@
+@keyframes float {
+  0% {
+    transform: translatey(0px);
+  }
+  50% {
+    transform: translatey(-20px);
+  }
+  100% {
+    transform: translatey(0px);
+  }
+}
+
 .landingArea {
+  color: white;
   width: 100%;
+  height: 100vh;
+  display: flex;
+}
+
+.leftSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
   height: 100%;
+}
+
+.rightSection {
+  width: 60%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.airBalloon {
+  transform: translatey(0px);
+  animation: float 6s ease-in-out infinite;
 }

@@ -1,7 +1,29 @@
 import React from 'react';
+import Image from 'next/image';
+
+import { Title } from '@/components/atoms/Title';
 
 import styles from './LandingArea.module.scss';
+import airBalloon from '@/public/images/airballoon.png';
 
 export const LandingArea: React.FC = ({}) => {
-  return <div className={styles.landingArea}>Test</div>;
+  return (
+    <div className={styles.landingArea}>
+      <div className={styles.leftSection}>
+        <Image
+          className={styles.airBalloon}
+          src={airBalloon}
+          alt={'cute air balloon'}
+          width={250}
+        />
+      </div>
+      <div className={styles.rightSection}>
+        <Title heading={'h3'}>hello... my name is Aaron</Title>
+        <Title heading={'h1'}>Frontend Web Developer</Title>
+        <Title heading={'h4'}>
+          I like to build scalable and practical websites.
+        </Title>
+      </div>
+    </div>
+  );
 };
