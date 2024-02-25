@@ -1,3 +1,5 @@
+@use '@/styles/breakpoints' as *;
+
 @keyframes float {
   0% {
     transform: translatey(0px);
@@ -18,11 +20,15 @@
 }
 
 .leftSection {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 40%;
-  height: 100%;
+  display: none;
+
+  @include for-tablet-up {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    height: 100%;
+  }
 }
 
 .rightSection {
