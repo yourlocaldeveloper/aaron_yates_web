@@ -1,0 +1,51 @@
+@use '@/styles/breakpoints' as *;
+@use '@/styles/fonts' as *;
+
+.title {
+  font-family: $mainFont;
+  font-weight: 400;
+}
+
+.h1 {
+  font-size: 2rem;
+
+  @include for-tablet-up {
+    font-size: 4vw;
+  }
+}
+
+.h2 {
+  font-size: 1.75rem;
+
+  @include for-tablet-up {
+    font-size: 3vw;
+  }
+}
+
+.h3 {
+  font-size: 1.5rem;
+
+  @include for-tablet-up {
+    font-size: 2vw;
+  }
+}
+
+.h4 {
+  font-size: 1.25rem;
+
+  @include for-tablet-up {
+    font-size: 1.5vw;
+  }
+}
+
+.h5 {
+  font-size: 1rem;
+
+  @include for-tablet-up {
+    font-size: 1vw;
+  }
+}
+
+.bold {
+  font-weight: 700;
+}

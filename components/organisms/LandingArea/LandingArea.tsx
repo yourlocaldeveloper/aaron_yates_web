@@ -19,9 +19,12 @@ export const LandingArea: React.FC = ({}) => {
       </div>
       <div className={styles.rightSection}>
         <Title heading={'h3'}>hello... my name is Aaron</Title>
-        <Title heading={'h1'}>Frontend Web Developer</Title>
+        <Title heading={'h1'} isBold>
+          Frontend Web Developer
+        </Title>
         <Title heading={'h4'}>
-          I like to build scalable and practical websites.
+          I like to build scalable modern website, using the latest
+          technologies.
         </Title>
       </div>
     </div>
