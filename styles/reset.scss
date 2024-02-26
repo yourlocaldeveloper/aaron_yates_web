@@ -37,3 +37,12 @@ h6 {
 #__next {
   isolation: isolate;
 }
+
+* {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+*::-webkit-scrollbar {
+  display: none;
+}
