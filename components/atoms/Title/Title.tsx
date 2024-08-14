@@ -6,7 +6,7 @@ import styles from './Title.module.scss';
 type HeadingValue = 'h1' | 'h2' | 'h3' | 'h4' | 'h5';
 
 interface TitleProps {
-  children: string;
+  children: React.ReactNode;
   heading: HeadingValue;
   isBold?: boolean;
 }

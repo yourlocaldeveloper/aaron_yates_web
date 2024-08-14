@@ -1,6 +1,9 @@
+@use '@/styles/fonts' as *;
+
 .main {
   min-height: 100vh;
   width: 100vw;
+  font-family: $mainFont;
 }
 
 .placeholder {
